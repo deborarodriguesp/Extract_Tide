@@ -1,3 +1,8 @@
+#########################################
+# Developed by: Débora Rodrigues Pereira
+# MARETEC IST, 05/03/2024
+#########################################
+
 import os
 import sys
 import h5py
