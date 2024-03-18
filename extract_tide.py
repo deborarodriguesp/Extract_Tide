@@ -12,7 +12,7 @@ from tqdm import tqdm
 
 hdf_path = 'C:/YourPath/Tide/FES/FES2014.hdf5'
 points_path = 'C:/YourPath/Tide/Points.txt'
-output_folder = 'C:/YourPath/Tide/Output'
+output_folder = 'C:/YourPath/Tide/output_extract'
 
 # Create the output folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)
