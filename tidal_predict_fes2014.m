@@ -1,3 +1,10 @@
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Developed by: Débora Rodrigues Pereira
+% MARETEC IST, 18/03/2024
+
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 clc
 clear all
 close all
