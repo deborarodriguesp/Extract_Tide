@@ -13,7 +13,7 @@ The tidal model used is FES2014, and it can be downloaded here http://wiki.mohid
 **Tidal Extraction** 
 
 The script opens the HDF file, finds close coordinates between the Points and the FES2014 coordinates, and extracts the amplitude and phase for each harmonic available. 
-The script also save in a text file the amplitudes and phases for each Point coordinate, as:
+The script also saves in a text file the amplitudes and phases for each Point coordinated, as:
 
 >Harmonics, Amplitude, Phase
 >
@@ -46,3 +46,24 @@ Keep in mind that you need to change 'half_cell_size' according to your cell siz
 Since the coordinates are in degrees, this variable has to be in degrees. 
 
 This will save different lines for each cell, allowing you to impose different water levels for each cell.  
+
+# Create the boundary file
+
+The final step is to join all this information in a block that MOHID Land can read: 
+
+><begin_boundary_line>
+>
+>LINE_FILENAME           : D:/DOUTORAMENTO/Tide/Tide_Extractor/output_lines/tidal_line_-0.503179_-46.162969.lin
+>
+>VARIABLE_WATER_LEVEL    : 1
+>
+>DEFAULTVALUE            : 0
+>
+>FILENAME                : D:/DOUTORAMENTO/Tide/Tide_Extractor/output_predict/tidal_predict_-0.503179_-46.162969.txt
+>
+>DATA_COLUMN             : 2
+>
+><end_boundary_line>
+
+After this file is created, copy to the RunOff_1.dat file.
+
