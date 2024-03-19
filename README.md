@@ -1,5 +1,5 @@
-# Extract_Tide
-A python code to extract tidal harmonic components from a hdf5 file.
+# Extract Tide
+A Python code to extract tidal harmonic components from a hdf5 file.
 
 **Points/Cells Coordinates** 
 
@@ -26,7 +26,7 @@ The script also save in a text file the amplitudes and phases for each Point coo
 >S2,0.49927242279052736,289.93888092041016
 
 
-# Predict_Tide
+# Predict Tide
 
 The second script is developed in Matlab, but it can be easily transformed into Python. Here, the tide prediction is done using 
 the formula  (Foreman and Henry, 1989):
@@ -36,3 +36,13 @@ the formula  (Foreman and Henry, 1989):
 The only function from t_tide used here is to find the frequency for each component (t_tide_name2freq)
 
 link: https://www.researchgate.net/publication/222121668_The_harmonic_analysis_of_tidal_model_time_series
+
+# Create Lines
+
+Now, you have points, but to add boundary value in each grid, you need a line for each cell. 
+This script will help you to create those lines. 
+
+Keep in mind that you need to change 'half_cell_size' according to your cell size. 
+Since the coordinates are in degrees, this variable has to be in degrees. 
+
+This will save different lines for each cell, allowing you to impose different water levels for each cell.  
