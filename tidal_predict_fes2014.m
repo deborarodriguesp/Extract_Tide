@@ -54,7 +54,7 @@ for i = 1 : numel(fileList)
 
     for i = 1:length(t)
         for k = 1:size(tidecon, 1)
-            signal = tidecon(k, 2) * cos((tidecon(k, 1) * t(i)) - tidecon(k, 3)); # (Foreman and Henry, 1989)
+            signal = tidecon(k, 2) * cos((tidecon(k, 1) * t(i)) - tidecon(k, 3)); % (Foreman and Henry, 1989)
 
             all_signals(i, k) = signal;
         end
