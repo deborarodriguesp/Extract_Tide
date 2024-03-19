@@ -22,14 +22,13 @@ def generate_boundary_file(output_folder_path, line_folder_path, predict_folder_
                     file.write(f'LINE_FILENAME           : {line_filename}\n')
                     file.write(f'VARIABLE_WATER_LEVEL    : 1\n')
                     file.write(f'DEFAULTVALUE            : 0\n')
-                    file.write(f'VALUE_TYPE              : TIMESERIE\n')
                     file.write(f'FILENAME                : {predict_filename}\n')
                     file.write(f'DATA_COLUMN             : 2\n')
                     file.write('<end_boundary_line>\n\n')
 
 # Exemplo de uso
-output_folder_path = 'D:/DOUTORAMENTO/Tide/Tide_Extractor/'
-line_folder_path = 'D:/DOUTORAMENTO/Tide/Tide_Extractor/output_lines/'
-predict_folder_path = 'D:/DOUTORAMENTO/Tide/Tide_Extractor/output_predict/'
+output_folder_path = 'C:/YourPath/Tide/'
+line_folder_path = 'C:/YourPath/Tide//output_lines/'
+predict_folder_path = 'C:/YourPath/Tide/output_predict/'
 
 generate_boundary_file(output_folder_path, line_folder_path, predict_folder_path)
