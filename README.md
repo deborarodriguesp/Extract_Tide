@@ -29,8 +29,10 @@ The script also save in a text file the amplitudes and phases for each Point coo
 # Predict_Tide
 
 The second script is developed in Matlab, but it can be easily transformed into Python. Here, the tide prediction is done using 
-the formula:
+the formula  (Foreman and Henry, 1989):
 >
->signal = amplitude * sin((frequency * time) + phase)
+>signal = amplitude * cos((frequency * time) - phase)
 >
 The only function from t_tide used here is to find the frequency for each component (t_tide_name2freq)
+
+link: https://www.researchgate.net/publication/222121668_The_harmonic_analysis_of_tidal_model_time_series
