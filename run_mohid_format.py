@@ -1,3 +1,8 @@
+#########################################
+# Developed by: Débora Rodrigues Pereira
+# MARETEC IST, 19/03/2024
+#########################################
+
 import os
 
 def generate_boundary_file(output_folder_path, line_folder_path, predict_folder_path):
