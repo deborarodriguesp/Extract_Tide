@@ -46,7 +46,7 @@ def calculate_left_right(coordinates, lon_to_find, lat_to_find):
     return lines_center, lines_right
            
             
-output_folder = 'D:\DOUTORAMENTO\Tide\Tide_Extractor\output_lines'  
+output_folder = 'C:/YourPath/Tide/output_lines/'  
 proj4_string = "+proj=longlat +datum=WGS84 +no_defs\n"
 begin_line = "<begin_line>\n"
 end_line = "<end_line>\n"   
