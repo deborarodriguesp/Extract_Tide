@@ -31,20 +31,24 @@ signal = amplitude * cos((frequency * time) - phase)
 ```
 The only function from t_tide used here is to find the frequency for each component (t_tide_name2freq)
 
-link: 
 # Create Lines
 
-Now, you have points, but to add boundary value in each grid, you need a line for each cell. 
+Until now, you have coordinate points from the center cell, but to add a boundary value in each cell in MOHID Land, 
+It requires one line for each cell. 
 This script will help you to create those lines. 
 
-Keep in mind that you need to change 'half_cell_size' according to your cell size. 
-Since the coordinates are in degrees, this variable has to be in degrees. 
+Don't forget to change the 'half_cell_size' variable according to your cell size. 
+Since the coordinates are in **degrees**, this variable has to be in **degrees**. 
 
-This will save different lines for each cell, allowing you to impose different water levels for each cell.  
+Thus, pay attention to your coordinates.
+
+This will save different lines for each cell, allowing you to impose different water levels for each cell in MOHID Land.  
 
 # Transform everything for MOHID Format (time series and boundary files)
 
-Now that the prediction is made, these files must be written in the MOHID [time series file](http://wiki.mohid.com/index.php?title=Time_Series). 
+Now that the prediction and lines are made, this information needs to be passed to the MOHID Land.
+
+First, the prediction files must be written in the MOHID [time series file](http://wiki.mohid.com/index.php?title=Time_Series). 
 
 The code will process and transform for this specific format. 
 
@@ -59,4 +63,8 @@ DATA_COLUMN             : 2
 <end_boundary_line>
 ```
 After this file is created, copy to the RunOff_1.dat file.
+
+Now you are ready to run multiple tide inputs in MOHID Land!
+
+Any questions, contact: debora.pereira@tecnico.ulisboa.pt
 
