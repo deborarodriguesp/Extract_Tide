@@ -1,3 +1,8 @@
+#########################################
+# Developed by: Débora Rodrigues Pereira
+# MARETEC IST, 20/03/2024
+#########################################
+
 import os
 import pandas as pd
 from datetime import datetime
